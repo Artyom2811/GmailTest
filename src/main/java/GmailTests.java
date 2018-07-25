@@ -1,4 +1,4 @@
-import Pages.StartPage;
+import pages.StartPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -26,9 +26,9 @@ public class GmailTests {
         webDriver.get("https://www.google.com/intl/ru/gmail/about/");
 
         mainPage.clickLoginButton()
-                .setLoginField("Artyom2811@gmail.com")
+                .setLoginField("login")
                 .clickNextButton()
-                .setPasswordField("dajeneznau10")
+                .setPasswordField("password")
                 .clickNextButton()
                 .clickAccountInfoButton();
         assertEquals("Не подтвержден вход в почту", "artyom2811@gmail.com",
@@ -42,9 +42,9 @@ public class GmailTests {
         webDriver.get("https://www.google.com/intl/ru/gmail/about/");
 
         mainPage.clickLoginButton()
-                .setLoginField("Artyom2811@gmail.com")
+                .setLoginField("login")
                 .clickNextButton()
-                .setPasswordField("dajeneznau10")
+                .setPasswordField("password")
                 .clickNextButton()
                 .clickWriteLetterButton()
                 .setAdressToSendLetterField("Artyom2811@gmail.com")
@@ -64,9 +64,9 @@ public class GmailTests {
         webDriver.get("https://www.google.com/intl/ru/gmail/about/");
 
         mainPage.clickLoginButton()
-                .setLoginField("Artyom2811@gmail.com")
+                .setLoginField("login")
                 .clickNextButton()
-                .setPasswordField("dajeneznau10")
+                .setPasswordField("password")
                 .clickNextButton()
                 .clickFirstRowCheckbox()
                 .clickDeleteLeterButton();
